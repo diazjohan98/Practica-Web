@@ -13,3 +13,14 @@
     border-radius: 50%;
     animation: heartbeat 1.5s infinite alternate ease-in-out;
   }
+
+  .cardProyectos:hover{
+    cursor: pointer;
+    background-color: #1976d2;
+    color: #000;
+    border-color: #000;
+  }
+
+  .titleProyectos:hover{
+    color: white;
+  }

@@ -66,7 +66,7 @@ export const Rojas = () => {
             Mis Proyectos
           </Typography>
           <Grid>
-            <Typography>Estos son algunos de los proyectos que he realizado a lo largo de mi carrera:</Typography>
+            <Typography></Typography>
           </Grid>
         </Grid>
       </Grid>

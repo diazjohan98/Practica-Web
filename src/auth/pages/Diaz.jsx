@@ -7,6 +7,7 @@ import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
+
 export const Diaz = () => {
   const [text, setText] = useState('');
   const fullText = 'JOHAN SEBASTIAN VASQUEZ DIAZ';
@@ -46,6 +47,8 @@ export const Diaz = () => {
     { id: 5, title: 'MEDTRACK', link: 'https://github.com/diazjohan98/MedTrack' },
     { id: 6, title: 'MYSUPPORT', link: 'https://github.com/juanhcode/MySupport' },
   ];
+
+  
 
   return (
     <Grid container direction="row" alignItems="center" justifyContent="center" spacing={2}>
@@ -87,23 +90,41 @@ export const Diaz = () => {
       <Grid container justifyContent="flex-start" alignItems="flex-start">
         <Typography>Estos son algunos de los proyectos que he realizado a lo largo de mi carrera:</Typography>
       </Grid>
-      <Grid container spacing={2} sx={{ mt: '20px'}}>
-      {projects.map((project) => (
-        <Grid item xs={12} sm={6} md={4} key={project.id}>
-          <Card sx={{
-            background: '#000',
-            border: '1px solid #1976d2',
-            borderRadius: '8px'
-          }}>
+      <Grid container spacing={2} sx={{ mt: '20px' }}>
+    {projects.map((project) => (
+      <Grid item xs={12} sm={6} md={4} key={project.id}>
+        <Link
+          className='titleProyectos'
+          sx={{
+            textDecoration: 'none',
+            color: 'inherit', // Mantener el color del texto heredado
+            display: 'block', // Ocupar todo el espacio disponible para hacer clic
+          }}
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Card
+            className='cardProyectos'
+            sx={{
+              background: '#000',
+              color: '#1976d2',
+              border: '1px solid #1976d2',
+              borderRadius: '8px',
+              height: '100%', // Asegurar que la tarjeta ocupe todo el espacio
+              '&:hover': {
+                boxShadow: '0px 0px 10px 0px #1976d2', // Efecto al pasar el mouse
+              },
+            }}
+          >
             <CardContent>
-              <Link sx={{textDecoration: 'none'}} href={project.link} target="_blank" rel="noopener noreferrer">
-                {project.title}
-              </Link>
+              {project.title}
             </CardContent>
           </Card>
-        </Grid>
-      ))}
-    </Grid>
+        </Link>
+      </Grid>
+    ))}
+  </Grid>
     <Grid item sx={{ width: '100%', borderBottom: '1px solid white', my: 2 }} />
 
     </Grid>

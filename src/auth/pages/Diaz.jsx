@@ -87,7 +87,7 @@ export const Diaz = () => {
           </Grid>
         </Grid>
         <Typography style={{ textAlign: 'left' }}>
-          me complace presentarme como un estudiante activo de la Universidad del Valle, específicamente en la sede Tuluá. Mi pasión y dedicación inquebrantable se centran en el emocionante mundo de la programación, con un enfoque particular en el desarrollo web.
+          Me complace presentarme como un estudiante activo de la Universidad del Valle, específicamente en la sede Tuluá. Mi pasión y dedicación inquebrantable se centran en el emocionante mundo de la programación, con un enfoque particular en el desarrollo web.
 
           Mis conocimientos sólidos abarcan una amplia gama de tecnologías esenciales para el desarrollo web. Estoy altamente competente en lenguajes como JavaScript, CSS, React.JS y HTML, lo que me permite crear experiencias web atractivas y funcionales. Además, mi experiencia con SASS y Bootstrap me permite optimizar la eficiencia y el aspecto de mis proyectos. Mi dominio de GIT y mi familiaridad con Scrum facilitan la gestión y colaboración en equipos de desarrollo, lo que considero esencial en la creación de aplicaciones web exitosas.
 
